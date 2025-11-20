@@ -1,0 +1,66 @@
+# =========================================================
+# 1. PYTHON VIRTUAL ENVIRONMENT AND CACHE
+# =========================================================
+
+# Virtual Environment
+.venv
+# Python bytecode and cache folders
+__pycache__/
+*.pyc
+
+# Jupyter / Notebook Checkpoints
+.ipynb_checkpoints/
+.jupyter/
+
+# Standard build outputs
+dist/
+build/
+*.egg-info/
+
+
+# =========================================================
+# 2. LARGE DATA AND MODELS (FOLLOWING BTC RULES)
+# =========================================================
+
+# Raw data and processed data folders (must be downloaded/created by script)
+data/
+
+# Video and large media files
+# Loại trừ tất cả các file video MP4
+*.mp4
+
+# Base models or large training checkpoints (Do not include base models in Docker )
+# Your base models should be downloaded via URL in training_code/README.md
+*.pth
+*.pt
+*.safetensors
+*.h5
+
+# D-FINE specific output folder (if it stores temporary checkpoints)
+# If this folder stores your FINAL inference weight, you must exclude it from ignore.
+output/ 
+
+
+# =========================================================
+# 3. LOCAL OUTPUTS, LOGS, AND IDE CONFIGURATION
+# =========================================================
+
+# Local prediction outputs
+predictions/
+viz_out/
+
+# Log files
+*.log
+
+# Docker/Submission files
+*.tar.gz 
+*.zip
+
+# Final submission files generated during testing (should be ignored locally)
+submission.json
+jupyter_submission.json
+time_submission.csv
+
+# IDE/System configuration files
+.vscode/
+.idea/
