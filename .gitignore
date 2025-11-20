@@ -26,7 +26,6 @@ build/
 data/
 
 # Video and large media files
-# Loại trừ tất cả các file video MP4
 *.mp4
 
 # Base models or large training checkpoints (Do not include base models in Docker )
@@ -46,7 +45,6 @@ output/
 # =========================================================
 
 # Local prediction outputs
-predictions/
 viz_out/
 
 # Log files

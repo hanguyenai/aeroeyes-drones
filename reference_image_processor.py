@@ -28,8 +28,8 @@ class Config:
     GRABCUT_RECT_PADDING: int = 10 # Inner padding for GrabCut initial rectangle (to avoid image edges)
 
     # I/O Paths
-    INPUT_DIR: str = "object_images/test"
-    OUTPUT_DIR: str = "debug_output_boxgrabcut"
+    INPUT_DIR: str = "public_test/samples/BlackBox_0/object_images"
+    OUTPUT_DIR: str = "box_grabcut"
 
 
 # ==============================================================================
